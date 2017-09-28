@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		855DB8DC1F7C7E33001869B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855DB8DB1F7C7E33001869B0 /* AppDelegate.m */; };
+		855DB8DF1F7C7E33001869B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855DB8DE1F7C7E33001869B0 /* ViewController.m */; };
+		855DB8E21F7C7E33001869B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855DB8E01F7C7E33001869B0 /* Main.storyboard */; };
+		855DB8E41F7C7E33001869B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855DB8E31F7C7E33001869B0 /* Assets.xcassets */; };
+		855DB8E71F7C7E33001869B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855DB8E51F7C7E33001869B0 /* LaunchScreen.storyboard */; };
+		855DB8EA1F7C7E33001869B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855DB8E91F7C7E33001869B0 /* main.m */; };
+		855DB8F41F7C7E33001869B0 /* testKayakoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855DB8F31F7C7E33001869B0 /* testKayakoTests.m */; };
+		855DB8FF1F7C7E33001869B0 /* testKayakoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855DB8FE1F7C7E33001869B0 /* testKayakoUITests.m */; };
+		855DB90E1F7C816F001869B0 /* MessengerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DB90D1F7C816F001869B0 /* MessengerWrapper.swift */; };
+		AB0B6C1C41B659EAE8BBC736 /* Pods_testKayako.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8AE5769D658D2B13850BC8 /* Pods_testKayako.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		855DB8F01F7C7E33001869B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 855DB8CF1F7C7E33001869B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855DB8D61F7C7E33001869B0;
+			remoteInfo = testKayako;
+		};
+		855DB8FB1F7C7E33001869B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 855DB8CF1F7C7E33001869B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855DB8D61F7C7E33001869B0;
+			remoteInfo = testKayako;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7772A34C290339573785EE82 /* Pods-testKayako.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testKayako.release.xcconfig"; path = "Pods/Target Support Files/Pods-testKayako/Pods-testKayako.release.xcconfig"; sourceTree = "<group>"; };
+		855DB8D71F7C7E33001869B0 /* testKayako.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testKayako.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		855DB8DA1F7C7E33001869B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		855DB8DB1F7C7E33001869B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		855DB8DD1F7C7E33001869B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		855DB8DE1F7C7E33001869B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		855DB8E11F7C7E33001869B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		855DB8E31F7C7E33001869B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		855DB8E61F7C7E33001869B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		855DB8E81F7C7E33001869B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855DB8E91F7C7E33001869B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		855DB8EF1F7C7E33001869B0 /* testKayakoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testKayakoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855DB8F31F7C7E33001869B0 /* testKayakoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testKayakoTests.m; sourceTree = "<group>"; };
+		855DB8F51F7C7E33001869B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855DB8FA1F7C7E33001869B0 /* testKayakoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testKayakoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855DB8FE1F7C7E33001869B0 /* testKayakoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testKayakoUITests.m; sourceTree = "<group>"; };
+		855DB9001F7C7E33001869B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855DB90C1F7C816E001869B0 /* testKayako-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testKayako-Bridging-Header.h"; sourceTree = "<group>"; };
+		855DB90D1F7C816F001869B0 /* MessengerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerWrapper.swift; sourceTree = "<group>"; };
+		88C4F25EDBF86AEEF634DB87 /* Pods-testKayako.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testKayako.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testKayako/Pods-testKayako.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8AE5769D658D2B13850BC8 /* Pods_testKayako.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testKayako.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		855DB8D41F7C7E33001869B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0B6C1C41B659EAE8BBC736 /* Pods_testKayako.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855DB8EC1F7C7E33001869B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855DB8F71F7C7E33001869B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0443472E85DDBF73BC754E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA8AE5769D658D2B13850BC8 /* Pods_testKayako.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		855DB8CE1F7C7E33001869B0 = {
+			isa = PBXGroup;
+			children = (
+				855DB8D91F7C7E33001869B0 /* testKayako */,
+				855DB8F21F7C7E33001869B0 /* testKayakoTests */,
+				855DB8FD1F7C7E33001869B0 /* testKayakoUITests */,
+				855DB8D81F7C7E33001869B0 /* Products */,
+				A88BC30A3B16A6798B6EF200 /* Pods */,
+				0443472E85DDBF73BC754E8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		855DB8D81F7C7E33001869B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				855DB8D71F7C7E33001869B0 /* testKayako.app */,
+				855DB8EF1F7C7E33001869B0 /* testKayakoTests.xctest */,
+				855DB8FA1F7C7E33001869B0 /* testKayakoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		855DB8D91F7C7E33001869B0 /* testKayako */ = {
+			isa = PBXGroup;
+			children = (
+				855DB90D1F7C816F001869B0 /* MessengerWrapper.swift */,
+				855DB8DA1F7C7E33001869B0 /* AppDelegate.h */,
+				855DB8DB1F7C7E33001869B0 /* AppDelegate.m */,
+				855DB8DD1F7C7E33001869B0 /* ViewController.h */,
+				855DB8DE1F7C7E33001869B0 /* ViewController.m */,
+				855DB8E01F7C7E33001869B0 /* Main.storyboard */,
+				855DB8E31F7C7E33001869B0 /* Assets.xcassets */,
+				855DB8E51F7C7E33001869B0 /* LaunchScreen.storyboard */,
+				855DB8E81F7C7E33001869B0 /* Info.plist */,
+				855DB8E91F7C7E33001869B0 /* main.m */,
+				855DB90C1F7C816E001869B0 /* testKayako-Bridging-Header.h */,
+			);
+			path = testKayako;
+			sourceTree = "<group>";
+		};
+		855DB8F21F7C7E33001869B0 /* testKayakoTests */ = {
+			isa = PBXGroup;
+			children = (
+				855DB8F31F7C7E33001869B0 /* testKayakoTests.m */,
+				855DB8F51F7C7E33001869B0 /* Info.plist */,
+			);
+			path = testKayakoTests;
+			sourceTree = "<group>";
+		};
+		855DB8FD1F7C7E33001869B0 /* testKayakoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				855DB8FE1F7C7E33001869B0 /* testKayakoUITests.m */,
+				855DB9001F7C7E33001869B0 /* Info.plist */,
+			);
+			path = testKayakoUITests;
+			sourceTree = "<group>";
+		};
+		A88BC30A3B16A6798B6EF200 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F25EDBF86AEEF634DB87 /* Pods-testKayako.debug.xcconfig */,
+				7772A34C290339573785EE82 /* Pods-testKayako.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		855DB8D61F7C7E33001869B0 /* testKayako */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855DB9031F7C7E33001869B0 /* Build configuration list for PBXNativeTarget "testKayako" */;
+			buildPhases = (
+				AABCBB95B8B6E53E660C7695 /* [CP] Check Pods Manifest.lock */,
+				855DB8D31F7C7E33001869B0 /* Sources */,
+				855DB8D41F7C7E33001869B0 /* Frameworks */,
+				855DB8D51F7C7E33001869B0 /* Resources */,
+				DA0A66A09BFA2FE6937C6F88 /* [CP] Embed Pods Frameworks */,
+				1A39269E4DFAFE26CA2AA23B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testKayako;
+			productName = testKayako;
+			productReference = 855DB8D71F7C7E33001869B0 /* testKayako.app */;
+			productType = "com.apple.product-type.application";
+		};
+		855DB8EE1F7C7E33001869B0 /* testKayakoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855DB9061F7C7E33001869B0 /* Build configuration list for PBXNativeTarget "testKayakoTests" */;
+			buildPhases = (
+				855DB8EB1F7C7E33001869B0 /* Sources */,
+				855DB8EC1F7C7E33001869B0 /* Frameworks */,
+				855DB8ED1F7C7E33001869B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855DB8F11F7C7E33001869B0 /* PBXTargetDependency */,
+			);
+			name = testKayakoTests;
+			productName = testKayakoTests;
+			productReference = 855DB8EF1F7C7E33001869B0 /* testKayakoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		855DB8F91F7C7E33001869B0 /* testKayakoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855DB9091F7C7E33001869B0 /* Build configuration list for PBXNativeTarget "testKayakoUITests" */;
+			buildPhases = (
+				855DB8F61F7C7E33001869B0 /* Sources */,
+				855DB8F71F7C7E33001869B0 /* Frameworks */,
+				855DB8F81F7C7E33001869B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855DB8FC1F7C7E33001869B0 /* PBXTargetDependency */,
+			);
+			name = testKayakoUITests;
+			productName = testKayakoUITests;
+			productReference = 855DB8FA1F7C7E33001869B0 /* testKayakoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		855DB8CF1F7C7E33001869B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Core;
+				TargetAttributes = {
+					855DB8D61F7C7E33001869B0 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					855DB8EE1F7C7E33001869B0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 855DB8D61F7C7E33001869B0;
+					};
+					855DB8F91F7C7E33001869B0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 855DB8D61F7C7E33001869B0;
+					};
+				};
+			};
+			buildConfigurationList = 855DB8D21F7C7E33001869B0 /* Build configuration list for PBXProject "testKayako" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 855DB8CE1F7C7E33001869B0;
+			productRefGroup = 855DB8D81F7C7E33001869B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				855DB8D61F7C7E33001869B0 /* testKayako */,
+				855DB8EE1F7C7E33001869B0 /* testKayakoTests */,
+				855DB8F91F7C7E33001869B0 /* testKayakoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		855DB8D51F7C7E33001869B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855DB8E71F7C7E33001869B0 /* LaunchScreen.storyboard in Resources */,
+				855DB8E41F7C7E33001869B0 /* Assets.xcassets in Resources */,
+				855DB8E21F7C7E33001869B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855DB8ED1F7C7E33001869B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855DB8F81F7C7E33001869B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A39269E4DFAFE26CA2AA23B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testKayako/Pods-testKayako-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AABCBB95B8B6E53E660C7695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testKayako-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0A66A09BFA2FE6937C6F88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testKayako/Pods-testKayako-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Birdsong/Birdsong.framework",
+				"${BUILT_PRODUCTS_DIR}/KayakoMessenger/KayakoMessenger.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/StatefulViewController/StatefulViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/Wrap/Wrap.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Birdsong.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KayakoMessenger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatefulViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wrap.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testKayako/Pods-testKayako-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		855DB8D31F7C7E33001869B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855DB8DF1F7C7E33001869B0 /* ViewController.m in Sources */,
+				855DB8EA1F7C7E33001869B0 /* main.m in Sources */,
+				855DB8DC1F7C7E33001869B0 /* AppDelegate.m in Sources */,
+				855DB90E1F7C816F001869B0 /* MessengerWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855DB8EB1F7C7E33001869B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855DB8F41F7C7E33001869B0 /* testKayakoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855DB8F61F7C7E33001869B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855DB8FF1F7C7E33001869B0 /* testKayakoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		855DB8F11F7C7E33001869B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 855DB8D61F7C7E33001869B0 /* testKayako */;
+			targetProxy = 855DB8F01F7C7E33001869B0 /* PBXContainerItemProxy */;
+		};
+		855DB8FC1F7C7E33001869B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 855DB8D61F7C7E33001869B0 /* testKayako */;
+			targetProxy = 855DB8FB1F7C7E33001869B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		855DB8E01F7C7E33001869B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855DB8E11F7C7E33001869B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		855DB8E51F7C7E33001869B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855DB8E61F7C7E33001869B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		855DB9011F7C7E33001869B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		855DB9021F7C7E33001869B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		855DB9041F7C7E33001869B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C4F25EDBF86AEEF634DB87 /* Pods-testKayako.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y93ZVJ82G3;
+				INFOPLIST_FILE = testKayako/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.testKayako;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "testKayako/testKayako-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		855DB9051F7C7E33001869B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7772A34C290339573785EE82 /* Pods-testKayako.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y93ZVJ82G3;
+				INFOPLIST_FILE = testKayako/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.testKayako;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "testKayako/testKayako-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		855DB9071F7C7E33001869B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMKAA3TE68;
+				INFOPLIST_FILE = testKayakoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.testKayakoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testKayako.app/testKayako";
+			};
+			name = Debug;
+		};
+		855DB9081F7C7E33001869B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMKAA3TE68;
+				INFOPLIST_FILE = testKayakoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.testKayakoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testKayako.app/testKayako";
+			};
+			name = Release;
+		};
+		855DB90A1F7C7E33001869B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMKAA3TE68;
+				INFOPLIST_FILE = testKayakoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.testKayakoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testKayako;
+			};
+			name = Debug;
+		};
+		855DB90B1F7C7E33001869B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WMKAA3TE68;
+				INFOPLIST_FILE = testKayakoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.testKayakoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testKayako;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		855DB8D21F7C7E33001869B0 /* Build configuration list for PBXProject "testKayako" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855DB9011F7C7E33001869B0 /* Debug */,
+				855DB9021F7C7E33001869B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855DB9031F7C7E33001869B0 /* Build configuration list for PBXNativeTarget "testKayako" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855DB9041F7C7E33001869B0 /* Debug */,
+				855DB9051F7C7E33001869B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855DB9061F7C7E33001869B0 /* Build configuration list for PBXNativeTarget "testKayakoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855DB9071F7C7E33001869B0 /* Debug */,
+				855DB9081F7C7E33001869B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855DB9091F7C7E33001869B0 /* Build configuration list for PBXNativeTarget "testKayakoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855DB90A1F7C7E33001869B0 /* Debug */,
+				855DB90B1F7C7E33001869B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 855DB8CF1F7C7E33001869B0 /* Project object */;
+}
