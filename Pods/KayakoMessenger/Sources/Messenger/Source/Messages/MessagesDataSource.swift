@@ -7,7 +7,6 @@
 //
 
 import AsyncDisplayKit
-
 import Unbox
 import Birdsong
 
@@ -19,12 +18,11 @@ enum ConversationState {
 	case loaded(Conversation, PendingMessagesOperations, FeedbackEventsHandler)
 }
 
-open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandler, ReplyBoxDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+open class MessagesDataSource: NSObject, ASTableDataSource, ASTableDelegate, InputSubmissionHandler, ReplyBoxDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
 	let client: Client
 	
 	var conversationState: ConversationState
-	let kreClient: KREClient
 	var messagesDataContainer = MessagesDataContainer()
 	
 	//PGDD
@@ -40,10 +38,9 @@ open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandl
 	var messagesUpdateTask: URLSessionDataTask?
 	var caseUpdateMessageTask: URLSessionDataTask?
 	
-	init(resource: Resource<Conversation>, client: Client = .shared, kreClient: KREClient = .shared, controller: MessagesViewController? = nil) {
+	init(resource: Resource<Conversation>, client: Client = .shared, controller: MessagesViewController? = nil) {
 		
 		self.client = client
-		self.kreClient = kreClient
 		switch resource {
 		case .notLoaded(let networkResource):
 			self.conversationState = .loading(resource: networkResource)
@@ -59,10 +56,9 @@ open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandl
 		self.messagesDataContainer.dataSource = self
 	}
 	
-	init(conversationState: ConversationState, client: Client = .shared, KREClient: KREClient = .shared, controller: MessagesViewController? = nil) {
+	init(conversationState: ConversationState, client: Client = .shared, controller: MessagesViewController? = nil) {
 		self.conversationState = conversationState
 		self.client = client
-		self.kreClient = KREClient
 		super.init()
 		self.messagesDataContainer.dataSource = self
 	}
@@ -178,7 +174,7 @@ open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandl
 	func setupTypingDelegate() {
 		if let controller = self.controller,
 			case .loaded(let conversation, _, _) = self.conversationState {
-			self.typingDelegate = TypingDelegate(textInputBar: controller.textInputBar, kreClient: self.kreClient, topic: conversation.realtimeChannel)
+			self.typingDelegate = TypingDelegate(textInputBar: controller.textInputBar, kreClient: ConversationsSource.shared.kreClient, topic: conversation.realtimeChannel)
 		}
 	}
 	
@@ -371,7 +367,7 @@ open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandl
 						}()
 				}
 				
-				let node = MessageContainerCellNode(messageViewModel: pendingMessage, delegate: self, client: self.client, resendTapDelegate: self)
+				let node = MessageContainerCellNode(messageViewModel: pendingMessage, delegate: self, client: self.client)
 				node.messageNode.shouldShowAvatar = self.messagesDataContainer.shouldDisplayAvatar(at: rowSubscript, senderID: conversationCreator.id)
 				node.selectionStyle = .none
 				node.transform = tableNode.transform
@@ -400,7 +396,7 @@ open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandl
 			}
 		case .messageStatus(let status, let isSender):
 			return {
-				let node = MessageStatusNode(status: status, isSender: isSender)
+				let node = MessageStatusNode(status: status, isSender: isSender, resendTapDelegate: self)
 				node.selectionStyle = .none 
 				return node
 			}
@@ -566,6 +562,24 @@ open class MessagesDataSource: NSObject, ASTableDataSource, InputSubmissionHandl
 			pendingMessageOperations.startSendingMessages()
 		}
 		self.controller?.tableNode.reloadRows(at: [IndexPath.init(row: messagesDataContainer.botMessages.count + messagesDataContainer.messages.count, section: 0)], with: .fade)
+	}
+	
+	public func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
+		switch messagesDataContainer[indexPath.row] {
+		case .pendingMessage(_):
+			if self.messagesDataContainer.pendingMessages.filter ({
+				message in
+				if case .failed = message.replyState {
+					return true
+				} else {
+					return false
+				}
+			}).count > 0 {
+				initiateResend()
+			}
+		default:
+			break
+		}
 	}
 	
 	public func sendButtonTapped(with text: String, textView: ALTextView) {

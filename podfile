@@ -2,7 +2,7 @@ inhibit_all_warnings! #消除警告
 platform :ios, ‘9.0’
 target ‘testKayako’ do
 
-pod 'KayakoMessenger', '~> 0.1.1'
+pod 'KayakoMessenger', '~> 0.2.2’
 use_frameworks!
 
 end

@@ -47,7 +47,7 @@ public class KREClient {
 		socket.enableLogging = false
 	}
 	
-	func connect(onConnect: (@escaping (Void) -> Void)) {
+	func connect(onConnect: (@escaping () -> Void)) {
 		socket.onConnect = onConnect
 		socket.connect()
 		socket.onDisconnect = {
@@ -79,11 +79,11 @@ public class KREClient {
 		}
 		
 		channel.presence.onJoin = { id, meta in
-			print("Join: user with id \(id) with meta entry: \(meta)")
+//			print("Join: user with id \(id) with meta entry: \(meta)")
 		}
 		
 		channel.presence.onLeave = { id, meta in
-			print("Leave: user with id \(id) with meta entry: \(meta)")
+//			print("Leave: user with id \(id) with meta entry: \(meta)")
 		}
 	}
 	
