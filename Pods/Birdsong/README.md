@@ -18,15 +18,18 @@ import Birdsong
 
 …
 
-let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!)
+// In your view controller / client
+let socket = Socket(url: NSURL(string: "http://localhost:4000/socket/websocket")!, params: ["key": "secret"])
+
+…
 
 socket.onConnect = {
     let channel = self.socket.channel("rooms:some-topic", payload: ["user": "spartacus"])
     channel.on("new:msg", callback: { message in
-        self.displayMessage(message)
+        print("New message: \(message)")
     })
 
-    channel.join().receive("ok", callback: { payload in
+    channel.join()?.receive("ok", callback: { payload in
         print("Successfully joined: \(channel.topic)")
     })
 
@@ -52,11 +55,13 @@ socket.onConnect = {
         print("Leave: user with id \(id) with meta entry: \(meta)")
     }
 }
+
+socket.connect()
 ```
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first, then use the Birdsong.xcworkspace Xcode workspace. The example is configured to work directly with the [Phoenix Chat Example](https://github.com/chrismccord/phoenix_chat_example). It simply connects to `localhost:4000`, joins the `rooms:lobby` channel, and logs each received message. The “Send message” button will send a message to the channel with an incrementing count.
 
 ## Installation
 

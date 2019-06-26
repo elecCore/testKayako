@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "testKayako-Bridging-Header.h"
 //#import <testKayako-Bridging-Header.h>
-#import <testKayako-Swift.h>
+//#import <testKayako-Swift.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *kayakoButton;
